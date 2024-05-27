@@ -6,6 +6,16 @@
         driverClassName="com.mysql.cj.jdbc.Driver"
         type="javax.sql.DataSource"
         username="root"
-        password="root"
+        password="Progetto01!"
         url="jdbc:mysql://localhost:3306/storage?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
+	
+	    <Resources>
+        <PreResources className="org.apache.catalina.webresources.DirResourceSet"
+                      base="${catalina.base}/webapps/GamesEmpireApp/META-INF"
+                      webAppMount="/META-INF" />
+        <PreResources className="org.apache.catalina.webresources.DirResourceSet"
+                      base="${catalina.base}/webapps/GamesEmpireApp/WEB-INF"
+                      webAppMount="/WEB-INF" />
+    </Resources>
+    	
 </Context>
